@@ -5,13 +5,6 @@ int AdventOfCodeDay2Part1(const std::deque<std::deque<int>>& input) {
 	int currentSmallestValue = 0;
 	int total = 0;
 	int completeTotal = 0;
-
-	for (std::deque<int> deqseq : input) {
-		for (int seq : deqseq) {
-			std::cout << seq << " ";
-		}
-		std::cout << '\n';
-	}
 	for (int i = 0; i < input.size(); ++i) {
 		currentBiggestValue = input.at(i).at(0);
 		currentSmallestValue = input.at(i).at(0);

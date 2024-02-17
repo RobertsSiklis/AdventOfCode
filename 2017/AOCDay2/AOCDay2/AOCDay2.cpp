@@ -4,6 +4,7 @@
 #include <string>
 #include <string.h>
 #include "AOCDay2Part1.h"
+#include "AOCDay2Part2.h"
 int main()
 {
     std::ifstream ifs;
@@ -22,14 +23,12 @@ int main()
     while (ifs.get(c)) {
         if (std::isspace(c) || c == '\n') {
             total += std::stoi(line);
-            std::cout << total << "|";
             line.clear();
             intDeque.push_back(total);
             total = 0;
         }
         if (c == '\n') {
             input.push_back(intDeque);
-            std::cout << '\n';
             intDeque.clear();
         }
         if (std::isdigit(c)) {
@@ -38,11 +37,7 @@ int main()
 
     }
     input.push_back(intDeque);
-
-    std::cout << "\n";
-    std::cout << "----------------------";
-    std::cout << '\n';
     ifs.close();
-    std::cout << "The total is: " << AdventOfCodeDay2Part1(input);
-
+    //std::cout << "The total is: " << AdventOfCodeDay2Part1(input) << '\n';
+    std::cout << "The total is: " << AdventOfCodeDay2Part2(input) << '\n';
 }

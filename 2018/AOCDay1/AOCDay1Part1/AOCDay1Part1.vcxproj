@@ -127,7 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AOCDay1.cpp" />
     <ClCompile Include="AOCDay1Part1.cpp" />
+    <ClCompile Include="AOCDay1Part2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AOCDay1Part1.h" />
+    <ClInclude Include="AOCDay1Part2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
