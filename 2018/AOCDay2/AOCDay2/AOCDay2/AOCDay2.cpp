@@ -3,7 +3,7 @@
 #include <deque>
 #include <string>
 #include "AOCDay2Part1.h"
-
+#include "AOCDay2Part2.h"
 int main()
 {
     std::ifstream ifs;
@@ -20,5 +20,6 @@ int main()
         input.push_back(line);
     }
     
-    std::cout << AdventOfCodeDay2Part1(input);
+    //std::cout << AdventOfCodeDay2Part1(input);
+    AdventOfCodeDay2Part2(input);
 }
