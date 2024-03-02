@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{63731d02-6847-450a-890e-2b0d80a209b0}</ProjectGuid>
-    <RootNamespace>AOCDay2Part1</RootNamespace>
+    <ProjectGuid>{1a868d89-a761-46ab-9f02-ecfc692aa09d}</ProjectGuid>
+    <RootNamespace>AOCDay2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AOCDay2.cpp" />
     <ClCompile Include="AOCDay2Part1.cpp" />
+    <ClCompile Include="AOCDay2Part2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AOCDay2Part1.h" />
+    <ClInclude Include="AOCDay2Part2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
